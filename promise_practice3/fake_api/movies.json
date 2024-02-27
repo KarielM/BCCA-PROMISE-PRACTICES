@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "movieTitle": "Guardians of the Galaxy Vol. 3",
+        "description": "A ragtag group of space travelers barely surviving against a galactic threat.",
+        "genre": ["Action", "Comedy", "Romance"],
+        "acronym": "gotgv3"
+    },
+    {
+        "id": 2,
+        "movieTitle": "Super Mario Bros Movie",
+        "description": "A movie about a video game. Jack Black sings.",
+        "genre": ["Comedy", "Action", "Kids", "Cartoon"],
+        "acronym": "smb"
+    },
+    {
+        "id": 3,
+        "movieTitle": "Love Again",
+        "description": "Some rom com where they pretend they don't want love all movie and then kiss at the end.",
+        "genre": ["Romance", "Comedy"],
+        "acronym": "la"
+    },
+    {
+        "id": 4,
+        "movieTitle": "Evil Dead Rise",
+        "description": "A horror movie. Idk. Creepy lady on cover.",
+        "genre": ["Action", "Horror", "Thriller"],
+        "acronym": "edr"
+    },
+    {
+        "id": 5,
+        "movieTitle": "The Covenant",
+        "description": "A war movie about some platoon doing something.",
+        "genre": ["Action", "Adventure", "War", "History"],
+        "acronym": "tc"
+    }
+]
