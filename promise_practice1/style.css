@@ -2,3 +2,25 @@
     margin: 5px;
     padding: 5px; 
 }
+
+a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 47.5%;
+}
+
+hr{
+    border-top: 3px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+
+img{
+    display: block;
+    width:10%;
+    height: 10%;
+}
