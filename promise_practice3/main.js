@@ -54,31 +54,56 @@ function getCurrentlySelectedMovie() {
 
 
 // ================= DO NOT CHANGE CODE ABOVE ^ ===== WRITE YOUR CODE BELOW ================
-
 fetch('./fake_api/days.json')
-.then(response => response.json())
-.then(promise => {
-  populateDaySelect(promise);
-  return promise.array
-})
+.then(result => result.json())
+.then(result => {
+  populateDaySelect(result);
+});
 fetch('./fake_api/movies.json')
 .then(result => result.json())
 .then(result => {
   populateMovieSelect(result);
-  return result.array
-})
-//----------------took you a bit to finish this bc you forgot 
-//--the parentheses on json --- =_=-----------
+});
+
 addEventListener('change', () => {
   let movie = getCurrentlySelectedMovie().acronym;
   let day = getCurrentlySelectedDay().dayOfWeek.toLowerCase();
+  // console.log(movie);
+  // console.log(day);
   fetch(`./fake_api/movie_times/${movie}/${day}/movie_times.json`)
   .then(result => result.json())
   .then(result => {
-      populateMovieInfo(getCurrentlySelectedMovie())
-      populateMovieTimes(result)
-    });
-  });
+    // console.log(result);
+    populateMovieInfo(getCurrentlySelectedMovie());
+    populateMovieTimes(result);
+  })
+})
+
+
+// fetch('./fake_api/days.json')
+// .then(response => response.json())
+// .then(promise => {
+//   populateDaySelect(promise);
+//   return promise.array
+// })
+// fetch('./fake_api/movies.json')
+// .then(result => result.json())
+// .then(result => {
+//   populateMovieSelect(result);
+//   return result.array
+// })
+// //----------------took you a bit to finish this bc you forgot 
+// //--the parentheses on json --- =_=-----------
+// addEventListener('change', () => {
+//   let movie = getCurrentlySelectedMovie().acronym;
+//   let day = getCurrentlySelectedDay().dayOfWeek.toLowerCase();
+//   fetch(`./fake_api/movie_times/${movie}/${day}/movie_times.json`)
+//   .then(result => result.json())
+//   .then(result => {
+//       populateMovieInfo(getCurrentlySelectedMovie())
+//       populateMovieTimes(result)
+//     });
+//   });
 
 // addEventListener('change', () => {
 //   let movie = getCurrentlySelectedMovie().acronym;
